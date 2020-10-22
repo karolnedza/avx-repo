@@ -10,7 +10,7 @@ provider "aviatrix" {
 resource "aviatrix_vpc" "aws_vpc" {
   cloud_type           = 1
   account_name         = "aws-account"
-  region               = "us-west-1"
+  region               = "eu-west-1"
   name                 = "aws-vpc-test"
   cidr                 = var.vpc_cidr
   aviatrix_transit_vpc = false
