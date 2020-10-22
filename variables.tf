@@ -1,2 +1,2 @@
-variable "vpc_cidr"
-variable "ctrl_password"
+variable "vpc_cidr" {}
+variable "ctrl_password" {}
