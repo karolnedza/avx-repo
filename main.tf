@@ -1,12 +1,14 @@
-provider "aws" {
-  region     = "us-east-1"
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+provider "aviatrix" {
+   username     = "admin"
+  password      = "Password123"
 }
 
-resource "aws_vpc" "aws_vpc" {
-  cidr_block       = "10.199.199.0/24"
-  tags = {
-      Name = "aws-us-east1-spoke1"
-    }
+resource "aviatrix_vpc" "aws_vpc" {
+  cloud_type           = 1
+  account_name         = "aws-account"
+  region               = "us-west-1"
+  name                 = "aws-vpc-test"
+  cidr                 = var.vpc_cidr
+  aviatrix_transit_vpc = false
+  aviatrix_firenet_vpc = false
 }
