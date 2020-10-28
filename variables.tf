@@ -1,2 +1,5 @@
-variable "vpc_cidr" {}
-variable "ctrl_password" {}
+variable "example" {}
+variable "environment" {}
+variable "pet_name_length" {}
+variable "secret" {default = 3}
+
