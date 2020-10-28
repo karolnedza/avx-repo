@@ -12,7 +12,7 @@ resource "aviatrix_vpc" "aws_vpc" {
   account_name         = "aws-account"
   region               = "eu-west-1"
   name                 = "Servicenow VPC"
-  cidr                 = var.pet_name_length
+  cidr                 = var.vpc_cidr
   aviatrix_transit_vpc = false
   aviatrix_firenet_vpc = false
 }
