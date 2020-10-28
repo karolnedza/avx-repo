@@ -1,5 +1,5 @@
+#variable "example" {}
 variable "example" {}
-variable "ctrl_password" {}
-variable "vpc_cidr" {}
+variable "pet_name_length" {}
 variable "secret" {default = 3}
 variable "vcs_repository" {}
