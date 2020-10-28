@@ -12,7 +12,7 @@ resource "aviatrix_vpc" "aws_vpc" {
   account_name         = "aws-account"
   region               = "eu-west-1"
   name                 = var.example
-  cidr                 = var.pet_name_length
+  cidr                 = "10.44.0.0/16"
   aviatrix_transit_vpc = false
   aviatrix_firenet_vpc = false
 }
