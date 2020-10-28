@@ -2,7 +2,7 @@ provider "aviatrix" {
   username     = "admin"
   password      = var.environment
   controller_ip = "35.171.31.227"
-  version       = "2.16.3"
+  version       = "2.17.0"
 }
 
 
