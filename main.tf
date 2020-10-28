@@ -1,6 +1,6 @@
 provider "aviatrix" {
   username     = "admin"
-  password      = var.ctrl_password
+  password      = var.environment
   controller_ip = "35.171.31.227"
   version       = "2.16.3"
 }
@@ -11,8 +11,8 @@ resource "aviatrix_vpc" "aws_vpc" {
   cloud_type           = 1
   account_name         = "aws-account"
   region               = "eu-west-1"
-  name                 = "aws-vpc-test"
-  cidr                 = var.vpc_cidr
+  name                 = var.example
+  cidr                 = var.pet_name_length
   aviatrix_transit_vpc = false
   aviatrix_firenet_vpc = false
 }
